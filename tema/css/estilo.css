@@ -45,11 +45,36 @@ main h3{
 .sticky {
     position: fixed;
     top: 0;
-    width: 71.3em;
-    /*width: 69.5em;*/
-    z-index: 9999;
+    /*width: 71.3em;*/
+    width: 100%;
+    z-index: 999;
 }
 
 .dropdown:hover>.dropdown-menu {
     display: block;
+}
+
+
+
+@media (min-width: 576px) {
+    .sticky{
+        max-width: 576px;
+    }
+}
+@media (min-width: 768px) {
+    .sticky{
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sticky{
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sticky{
+        max-width: 1200px;
+    }
 }
