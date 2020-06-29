@@ -45,7 +45,6 @@ main h3{
 .sticky {
     position: fixed;
     top: 0;
-    /*width: 71.3em;*/
     width: 100%;
     z-index: 999;
 }
@@ -55,7 +54,7 @@ main h3{
 }
 
 
-
+/*Esse pedaço de código é para deixar o sticky responsivo, porque ele não consegui pergar as responsividade do bootstrap.*/
 @media (min-width: 576px) {
     .sticky{
         max-width: 576px;
@@ -76,5 +75,11 @@ main h3{
 @media (min-width: 1200px) {
     .sticky{
         max-width: 1200px;
+    }
+}
+
+@media (max-width: 766px) {
+    main h3{
+        text-align: center;
     }
 }
